@@ -82,7 +82,7 @@ xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_vers
 # / / Make Main Directory
 rm -rf /usr/bin/xray
 rm -rf /usr/local/bin/xray
-rm -rf /etc/xray
+#rm -rf /etc/xray
 rm -rf /var/log/xray
 
 mkdir -p /usr/bin/xray
@@ -101,7 +101,7 @@ touch /var/log/xray/access.log
 touch /var/log/xray/error.log
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
-service squid start
+#service squid start
 #new coming
 uuid1=$(cat /proc/sys/kernel/random/uuid)
 uuid2=$(cat /proc/sys/kernel/random/uuid)
