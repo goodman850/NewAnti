@@ -64,9 +64,9 @@ ell=active
 #
 
 if [ "$xrays" && "$xrays1" ]; then
- echo -e " Xray/V2Ray  Stopped and Disabled      :$GREEN [Running] $NC"
+ echo -e " Xray/V2Ray  Stopped and Disabled      :$GREEN [Disabled] $NC"
  else
- echo -e " Xray/V2Ray              :$RED [soon] $NC"
+ echo -e " Xray/V2Ray              :$RED [Error] $NC"
  fi
 echo -e "$BLUE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
 echo -e "$BRED----------- Mod By OnlyNet -----------"

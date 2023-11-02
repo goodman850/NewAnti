@@ -94,23 +94,13 @@ curl -sL "$xraycore_link" -o xray.zip
 unzip -q xray.zip && rm -rf xray.zip
 mv xray /usr/local/bin/xray
 chmod +x /usr/local/bin/xray
+
 # Make Folder XRay
 mkdir -p /var/log/xray/
 touch /var/log/xray/access.log
 touch /var/log/xray/error.log
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
-wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
-bash acme.sh --install
-rm acme.sh
-cd .acme.sh
-bash acme.sh --register-account -m senowahyu62@gmail.com
-bash acme.sh --issue --standalone -d $domain --force
-bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
-service squid start
-
-# Make Folder XRay
-
 #service squid start
 #new coming
 uuid1=$(cat /proc/sys/kernel/random/uuid)
