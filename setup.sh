@@ -44,7 +44,7 @@ onlynetvpnnnnnnnnnnn="raw.githubusercontent.com/goodman850/NewAnti/master/update
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl -k https://apiv2.turbotest.tech/sd/apiV2/api.php?myip=5 | grep $MYIP | awk '{print $3}')
+IZIN=$(curl -k https://apiv2.turbotest.tech/sd/apiV2/api.php?myip=5 )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
