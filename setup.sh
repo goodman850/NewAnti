@@ -59,7 +59,7 @@ clear
 
 #mkdir /var/lib/onlynetstorevpn;
 #echo "IP=" >> /var/lib/onlynetstorevpn/ipvps.conf
-#wget https://${onlynetvpn}/newhost.sh && chmod +x newhost.sh && ./newhost.sh
+wget https://${onlynetvpn}/newhost.sh && chmod +x newhost.sh && ./newhost.sh
 #sleep 1
 #install webpanel
 #wget https://raw.githubusercontent.com/goodman850/NewAnti/master/update/webpanel.sh && chmod +x webpanel.sh && screen -S webpanel ./webpanel.sh
