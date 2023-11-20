@@ -18,10 +18,10 @@ IZIN=$(curl https://raw.githubusercontent.com/goodman850/NewAnti/master/ipvps.tx
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#echo -e "${NC}${RED}Permission Denied!${NC}";
+#echo -e "${NC}${LIGHT}Please Contact Admin!!"
+#echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
+#exit 0
 fi
 clear
                hariini=`date +%d-%m-%Y`

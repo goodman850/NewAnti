@@ -18,10 +18,10 @@ IZIN=$(curl -k https://apiv2.turbotest.tech/sd/apiV2/api.php?myip=5 )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
-exit 0
+#echo -e "${NC}${RED}Permission Denied!${NC}";
+#echo -e "${NC}${LIGHT}Please Contact Admin!!"
+#echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
+#exit 0
 fi
 clear
 OnlyNetupdate="raw.githubusercontent.com/goodman850/NewAnti/master/update"
