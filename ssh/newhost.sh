@@ -16,11 +16,11 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$(curl https://raw.githubusercontent.com/goodman850/NewAnti/master/ipvps.txt )
 if [ $MYIP = $MYIP ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
+echo -e "${NC}${GREEN}Permission Accepted...${NC}";
 else
 #echo -e "${NC}${RED}Permission Denied!${NC}";
 #echo -e "${NC}${LIGHT}Please Contact Admin!!"
-#echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/OnlyNet"
 #exit 0
 fi
 error1="${RED}[ERROR]${NC}"
@@ -32,12 +32,15 @@ echo -e "========================="
 echo -e "${success} Please wait..."
 mkdir -p /usr/bin/xray
 mkdir -p /etc/xray
+rm -rf /etc/xray/domain
+rm -rf /root/domain
+touch /etc/xray/domain
+touch /root/domain
 echo $domain >> /etc/xray/domain
 echo $domain >> /root/domain
 echo "IP=$domain" >> /var/lib/onlynetstorevpn/ipvps.conf
 echo "none" >> /var/lib/onlynetstorevpn/cfndomain
 sleep 5
-
 # sleep 0.5
 # domain=$(cat /etc/xray/domain)
 # apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
